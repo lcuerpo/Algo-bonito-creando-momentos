@@ -6,7 +6,7 @@
     content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="estyle.css">
-    <title>JUGETERIA</title>
+    <title>JUGUETERIA</title>
 </head>
 <header>
   
@@ -20,16 +20,44 @@
 <body>
 <div class="primero">
     <img src="algo bonito.jpg" alt="logo" width="50" height="50">
-  <h1 id="titulo">JUGETERIA</h1> 
+  <h1 id="titulo">JUGUETERIA</h1> 
   <h1>"ALGO BONITO, CREANDO MOMENTOS"</h1>
 
-  <p id="juguete" >los jugetes que estas buscando y más... </p>
+  <p id="juguete" >Los jugetes que estas buscando y más... </p>
 </div>
 <div class="segundo">
     <p>Contamos con una amplia variedad de marcas, modelos, diseños y clases de jugetes para todas las edades</p>
 </div>
 <div class="identificador-1">  <h3>Categorias</h3>
-    <p>AUTOS, CAMIONES Y MAQUINAS</p>
+    <p>En nuestras distintas sucusales podras encontrar losjuguetes para los mas pequeños, contamos con lines economicas comoasí también las mejores marcas del mercado en el siguiente apartado lo prodras encontar con facilidad con nuestro buscador que te lo clasificara segun sus distintas categorias</p>
+    
+</div>
+<section id="Video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/g0VUEykU5uY?si=FxkaArPkp3Av3zQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+   </section>
+   <strong><div class=" identificador-2"> Horarios de atención </strong>
+   <ul>
+   <li>lunes: 9hs a 15hs</li>
+   <li>Martes: 9hs a 15hs</li>
+   <li>Miercoles: 9hs a 15hs</li>
+   <li>jueves: 8hs a 20hs</li>
+  <li>Viernes: 8hs a 20hs</li>
+  <li>Sabados: 8hs a 11hs</li>
+</ul>
+</div>
+<strong><div class=" identificador-3">Direciones de locales </strong>
+    <ol>
+    <li>- 25 de Mayo N° 235, Trelew</li>
+   <li>- AV. San Martin N°125, Rawson</li>
+   <li>- los pinos N°787, esquel</li>
+   <li>- Av. 9 de julio N° 1151 Pto Madryn</li>
+    </ol>
+</div>
+<div class="tabla" style="position:relative; align-items: center">
+    <div id="paso-1">
+        <h2>Categorias</h2>
+        <p>Elija entre las distintas categorias</p>
+        <p>AUTOS, CAMIONES Y MAQUINAS</p>
     <P>MUÑECAS</P>
     <p>DINOSAURIOS</p>
     <p>JUEGOS DE MESA</p>
@@ -38,29 +66,41 @@
     <P>AIRE LIBRE Y DEPORTES</P>
     <P>SETS DE JUGUETES</P>
     <P>JUEGOS EDUCATIVOS</p>
-</div>
-<section id="Video">
-        <iframe width="560" height="315" src="https://www.youtube.com/watch?v=mcGB8o-NKTU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-   </section>
-   <strong><div class=" identificador-2"> Lista de personajes </strong>
-   <ul>
-   <li>Marvel</li>
-   <li>Batman</li>
-   <li>Lego Technic</li>
-   <li>DC Comics</li>
-  <li>Nerf</li>
-  <li>Lego City</li>
-</ul>
-</div>
-<strong><div class=" identificador-3">Rango de Edad para Juguetes </strong>
-    <ul>
-    <li>Del Nacimiento a los 24 Meses</li>
-   <li>De 2 a 4 Años</li>
-   <li>De 5 a 7 Años</li>
-   <li>De 8 a 13 Años</li>
-    </ul>
-</div>
-<div class="tabla" style="position:relative; align-items: center">
+        <input type="text" id="categoria"placeholder="ingrese categoria">
+    </div>
+    <div id="=paso-2"style="display: none;">
+        <h2>Lista de personajes</h2>
+        <p>Elija entre los distintos personajes</p>
+            <p>Marvel</p>
+            <p>Batman</p>
+            <p>Lego Technic</p>
+            <p>DC Comics</p>
+           <p>Nerf</p>
+           <p>Lego City</p>
+           <input type="text" id="personaje"placeholder="ingrese personaje">
+    </div>
+    <div id="=paso-3"style="display: none;">
+        <h2>Rango de Edad para Juguetes</h2>
+        <p>Elija edad</p>
+        <p>Del Nacimiento a los 24 Meses</p>
+        <p>De 2 a 4 Años</p>
+        <p>De 5 a 7 Años</p>
+        <p>De 8 a 13 Años</p>
+        <input type="text" id="edad"placeholder="ingrese rango edad">
+     </div>
+     <div id="=paso-4"style="display: none;">
+        <h2>Resumen</h2>
+        <ul>
+            <li id="resumen-categoria"></li>
+            <li id="resumen-personaje"></li>
+            <li id="resumen-edad"></li>
+        </ul>
+    </div>>
+        <button id="btn-anterior">Anterior</button>
+    </div>
+    <div align ="right">
+            <button id="btn-siguiente">Siguiente</button>
+     </div>
 <table>
     <tr>
         <th>EDADES</th>
@@ -89,6 +129,29 @@
     </tr>
 </table>
 </div>
+<br><button id="boton" onclick="funcion1()">ELEJIR JUGUETE</button><div id="caja"></div>
+<button onclick="cambiarColor"> cambiar color</button>
+<script>
+    function cambiarColor(){
+        if ( document.getElementById("caja").style.backgroundColor === "red" ) {
+            document.getElementById("caja").style.backgroundColor = "white"
+        }
+        else {
+            document.getElementById("caja").style.backgroundColor = "red" 
+        }
+    }
+
+</script>
+<br><input type="text"id="nomdredeljuguete" placeholder="nombre del juguete">
+<button onclick="funcion2()">jugete seleccionado</button>
+<script>
+    function funcion2(){
+        let nombredeljuguete = "nombredeljuguete"
+        alert("selecciono" + nombredeljuguete)
+    }
+</script>
+<br><br>
+
 <form id="formulario">
     <h3>Algo bonito, creando momentos</h3>
     <h4>Recibe nuestras novedades</h4>
@@ -111,6 +174,8 @@
 
     <img src="305639391_590371829456743_4405405243058011256_n.jpg" alt="imagen" width="200" height="200">
 
+
+    <script src="./javascript_code.js"></script>
 
 
 </body>

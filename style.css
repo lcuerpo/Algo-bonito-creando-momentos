@@ -1,16 +1,18 @@
 #titulo{font-size: 80px;}
 .primero{ font-family:Arial, Helvetica, sans-serif; text-align:center; padding-top:20px}
-h1{color: rgb(73, 29, 230);font-size: 70px;}
+h1{color: rgb(73, 29, 230);font-size: 70px; text-decoration:underline;}
 header a {color: red; margin: 150px;}
 .segundo{color: black; font-size: 20px;}
 .identificador-1{font-size: 15px;color: coral;}
 .identificador-2{font-size: 15px;color: rgb(106, 80, 255);}
 .identificador-3{font-size: 15px;color: rgb(80, 255, 103);}
-#video { align-items: center; padding: 80px;}
+#video{position: relative;left: 300px;}
 table, th, td { border: 2px solid black;} 
     tr:first-child {
         background-color: rgb(94, 151, 61);align-items: center;}
-#juguete {  background-color: rgb(221, 26, 146);
+#juguete { background-color: rgb(221, 26, 146);
             border: 2px solid rgb(177, 90, 32);}
  #formulario{   background-color: rgb(248, 252, 255);
                 display: inline-block; }
+#caja { border:3px   black solid; 
+    background-color: white ; width:50px ; height:50px}
